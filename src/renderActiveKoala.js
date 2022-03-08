@@ -1,3 +1,4 @@
+import { selectKoala } from "./selectKoala"
 // Renders a big image of a selected koala
 export let renderActiveKoala = koala => {
     let activeKoalaContainer = document.createElement('div')

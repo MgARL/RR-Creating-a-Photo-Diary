@@ -1,11 +1,11 @@
 import { renderActiveKoala } from './renderActiveKoala'
 import { renderKoalaList } from './renderKoalaList'
 import { koalas } from './koalas'
-
-let activeKoala = null
+import { activeKoala } from './selectKoala'
 
 // Called once when the page loads, and again every time a koala is selected
 export let render = () => {
+
     let oldPage=  document.querySelector('.koala-container')
     let newPage;
     if(activeKoala){
